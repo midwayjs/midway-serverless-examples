@@ -20,7 +20,7 @@ $ serverless install --url https://github.com/midwayjs/midway-faas-examples/tree
 ### 第三步：进入目录
 
 ```shell script
-$ cd faas
+$ cd demo-faas
 ```
 
 ### 第四步：安装npm依赖
