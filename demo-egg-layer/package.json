@@ -1,0 +1,23 @@
+{
+  "name": "midway-faas",
+  "version": "1.0.0",
+  "description": "Midway Faas Template for the Serverless Framework and Aliyun",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "serverless",
+    "aliyun",
+    "midway"
+  ],
+  "dependencies": {
+    "egg": "^2.15.1",
+    "egg-scripts": "^2.11.0",
+    "@midwayjs/serverless-fc-starter": "*",
+    "@midwayjs/runtime-engine": "*",
+    "@midwayjs/egg-layer": "*"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.5",
+    "serverless-midway-plugin": "*"
+  }
+}

@@ -1,0 +1,26 @@
+service: serverless-midway-faas
+
+provider:
+  name: ''
+
+functions:
+  index:
+    handler: index.handler
+    events:
+      - http:
+          method: get
+
+layers:
+  eggLayer: npm:@midwayjs/egg-layer
+
+plugins:
+  - serverless-midway-plugin
+
+package:
+  include:
+    - app/**
+    - config/**
+    - app.js
+    - agent.js
+    - index.js
+  artifact: midwayFaas.zip
