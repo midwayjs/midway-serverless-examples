@@ -1,0 +1,19 @@
+service: serverless-midway-faas
+
+provider:
+  name: ''
+
+functions:
+  index:
+    handler: index.handler
+    events:
+      - schedule:
+          type: every
+          value: '0 0 8 * * *'
+          payload: 'awesome-fc'
+
+plugins:
+  - serverless-midway-plugin
+
+package:
+  artifact: midwayFaas.zip

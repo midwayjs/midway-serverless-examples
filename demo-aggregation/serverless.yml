@@ -1,0 +1,35 @@
+service: serverless-midway-faas
+
+provider:
+  name: ''
+
+functions:
+  index:
+    handler: index.handler
+    events:
+      - http:
+          path: /api/index
+          method: get
+  hello:
+    handler: hello.handler
+    events:
+      - http:
+          path: /api/hello
+          method: get
+
+aggregation:
+  common:
+    deployOrigin: false
+    functions:
+      - index
+      - hello
+
+custom:
+  customDomain:
+    domainName: your.domain.example.com
+
+plugins:
+  - serverless-midway-plugin
+
+package:
+  artifact: midwayFaas.zip
