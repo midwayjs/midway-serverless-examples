@@ -2,12 +2,12 @@ import { FaaSContext, func, inject, provide } from '@midwayjs/faas';
 
 @provide()
 @func('index.handler')
-export class HelloService {
+export class IndexService {
 
   @inject()
   ctx: FaaSContext;  // context
 
-  async handler(event, obj = {}) {
+  async handler() {
       return 'hello world';
   }
 }

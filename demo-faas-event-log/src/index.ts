@@ -7,7 +7,7 @@ export class HelloService {
   @inject()
   ctx: FaaSContext;  // context
 
-  async handler(event, obj = {}) {
+  async handler(event) {
       return 'hello world';
   }
 }

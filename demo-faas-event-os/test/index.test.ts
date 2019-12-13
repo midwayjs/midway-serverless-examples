@@ -1,11 +1,14 @@
-import { execSync } from 'child_process';
+import { invoke } from '@midwayjs/invoke';
 import * as assert from 'assert';
 import { join } from 'path';
 const servicePath = join(__dirname, '../');
 
 describe('/test/invokeAliyun/test/invoke.test.ts', () => {
-  it('invoke rumtime:aliyun', async () => {
-    const result = await execSync(`cd ${servicePath};serverless invoke -f index`);
+  it('invoke', async () => {
+    const result = await invoke({
+      functionName: 'index',
+      functionDir: join(__dirname, '../')
+    });
     assert(/"hello world"/.test(result.toString()));
   });
 });

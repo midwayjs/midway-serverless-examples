@@ -7,7 +7,7 @@ export class IndexService {
   @inject()
   ctx: FaaSContext;  // context
 
-  async handler(event, obj = {}) {
+  async handler() {
     return 'index.handler';
   }
 }
