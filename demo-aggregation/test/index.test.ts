@@ -7,7 +7,7 @@ describe('/test/invokeAliyun/test/invoke.test.ts', () => {
   it('invoke', async () => {
     const result = await invoke({
       functionName: 'index',
-      functionDir: join(__dirname, '../')
+      functionDir: servicePath
     });
     assert(/"hello world"/.test(result.toString()));
   });
