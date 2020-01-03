@@ -11,7 +11,8 @@ functions:
           method: get
 
 layers:
-  eggLayer: npm:@midwayjs/egg-layer
+  eggLayer: 
+    path: npm:@midwayjs/egg-layer
 
 plugins:
   - serverless-midway-plugin
