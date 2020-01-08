@@ -1,7 +1,3 @@
-service: serverless-midway-faas
-
-provider:
-  name: ''
 
 functions:
   index:
@@ -9,14 +5,9 @@ functions:
     events:
       - http:
           method: get
-
 layers:
-  eggLayer: 
-    path: npm:@midwayjs/egg-layer
-
-plugins:
-  - serverless-midway-plugin
-
+  eggLayer:
+    path: 'npm:@midwayjs/egg-layer@beta'
 package:
   include:
     - app/**
@@ -25,3 +16,9 @@ package:
     - agent.js
     - index.js
   artifact: midwayFaas.zip
+plugins:
+  - serverless-midway-plugin
+provider:
+  name: aliyun
+service:
+  name: serverless-midway-faas
