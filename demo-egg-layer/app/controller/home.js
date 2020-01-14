@@ -9,7 +9,7 @@ class HomeController extends Controller {
   }
   async buffer() {
     const { ctx } = this;
-    ctx.setHeader('x-res', 'buffer');
+    ctx.set('x-res', 'buffer');
     // assert
     ctx.body = Buffer.from('hi, egg');
   }

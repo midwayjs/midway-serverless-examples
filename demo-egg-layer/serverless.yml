@@ -7,7 +7,7 @@ functions:
           method: get
 layers:
   eggLayer:
-    path: 'npm:@midwayjs/egg-layer@beta'
+    path: 'npm:@midwayjs/egg-layer'
 package:
   include:
     - app/**
