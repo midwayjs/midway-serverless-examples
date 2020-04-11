@@ -8,9 +8,7 @@ functions:
   apiGatewayTrigger:
     handler: index.handler
     events:
-      - apigw:
-          method: get
-          path: /
+      - apigw
 
 package:
   artifact: code.zip
