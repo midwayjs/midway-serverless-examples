@@ -1,5 +1,5 @@
 {
-  "name": "midway-faas",
+  "name": "@aliyun/demo-faas-event-os",
   "version": "1.0.0",
   "description": "Midway Faas Template for the Serverless Framework and Aliyun",
   "main": "index.js",
@@ -11,10 +11,5 @@
   ],
   "dependencies": {
     "@midwayjs/faas": "*"
-  },
-  "devDependencies": {
-    "@types/mocha": "^5.2.5",
-    "serverless-midway-plugin": "*",
-    "@midwayjs/invoke": "*"
   }
 }

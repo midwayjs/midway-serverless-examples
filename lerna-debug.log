@@ -1,0 +1,13 @@
+0 silly argv {
+0 silly argv   _: [ 'bootstrap' ],
+0 silly argv   lernaVersion: '3.20.2',
+0 silly argv   '$0': '/Users/harry/project/open-midway-faas-examples/node_modules/.bin/lerna'
+0 silly argv }
+1 notice cli v3.20.2
+2 verbose rootPath /Users/harry/project/open-midway-faas-examples
+3 error Error: Invalid package name "aliyun/demo-faas": name can only contain URL-friendly characters
+3 error     at invalidPackageName (/Users/harry/project/open-midway-faas-examples/node_modules/npm-package-arg/npa.js:86:15)
+3 error     at Result.setName (/Users/harry/project/open-midway-faas-examples/node_modules/npm-package-arg/npa.js:121:11)
+3 error     at new Result (/Users/harry/project/open-midway-faas-examples/node_modules/npm-package-arg/npa.js:111:23)
+3 error     at Function.resolve (/Users/harry/project/open-midway-faas-examples/node_modules/npm-package-arg/npa.js:58:15)
+3 error     at new Package (/Users/harry/project/open-midway-faas-examples/node_modules/@lerna/package/index.js:36:26)

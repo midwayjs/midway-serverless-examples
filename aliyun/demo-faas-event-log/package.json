@@ -1,0 +1,15 @@
+{
+  "name": "@aliyun/demo-faas-event-log",
+  "version": "1.0.0",
+  "description": "Midway Faas Template for the Serverless Framework and Aliyun",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "serverless",
+    "aliyun",
+    "midway"
+  ],
+  "dependencies": {
+    "@midwayjs/faas": "*"
+  }
+}

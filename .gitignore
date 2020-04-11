@@ -1,3 +1,4 @@
 .serverless
+.faas_debug_tmp
 node_modules
 *.zip

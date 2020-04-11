@@ -1,0 +1,23 @@
+{
+  "name": "open-midway-faas-examples",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@midwayjs/serverless-invoke": "beta",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.18",
+    "lerna": "3",
+    "typescript": "^3.5.1"
+  },
+  "scripts": {
+    "test": "lerna run test",
+    "cov": "lerna run cov --concurrency=1",
+    "ci": "npm run build && npm run cov",
+    "purge": "npm run clean && rm -rf package-lock.json && rm -rf node_modules",
+    "bootstrap": "rm -f ./packages/.DS* && lerna bootstrap",
+    "clean": "lerna clean --yes && rm -rf ./packages/**/package-lock.json"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,12 @@
+service:
+  name: midway-faas-examples-aliyun
+
+provider:
+  name: aliyun
+
+functions:
+  httpTrigger:
+    handler: index.handler
+
+package:
+  artifact: code.zip
