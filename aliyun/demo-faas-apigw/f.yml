@@ -1,16 +1,16 @@
 service:
-  name: midway-faas-examples-aliyun
+  name: midway-faas-examples
 
 provider:
   name: aliyun
 
 functions:
-  httpTrigger:
+  apiGatewayTrigger:
     handler: index.handler
     events:
-      - http:
-        method: get
-        path: /
+      - apigw:
+          method: get
+          path: /
 
 package:
   artifact: code.zip

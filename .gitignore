@@ -2,3 +2,4 @@
 .faas_debug_tmp
 node_modules
 *.zip
+.DS_Store
