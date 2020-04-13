@@ -1,7 +1,7 @@
-service: serverless-midway-faas
+service: midway-faas-examples
 
 provider:
-  name: ''
+  name: aliyun
 
 functions:
   index:
@@ -15,9 +15,3 @@ functions:
           filterSuffix: .png
           role: 'acs:ram::1234567890:role/fc-invoke-test'
           version: 'LATEST' 
-
-plugins:
-  - serverless-midway-plugin
-
-package:
-  artifact: midwayFaas.zip

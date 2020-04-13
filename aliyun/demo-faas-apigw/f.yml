@@ -9,6 +9,3 @@ functions:
     handler: index.handler
     events:
       - apigw
-
-package:
-  artifact: code.zip

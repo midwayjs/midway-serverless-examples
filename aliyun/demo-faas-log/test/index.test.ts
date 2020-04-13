@@ -1,4 +1,4 @@
-import { invoke } from '@midwayjs/invoke';
+import { invoke } from '@midwayjs/serverless-invoke';
 import * as assert from 'assert';
 import { join } from 'path';
 const servicePath = join(__dirname, '../');

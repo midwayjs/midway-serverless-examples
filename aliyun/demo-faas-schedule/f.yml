@@ -1,7 +1,7 @@
-service: serverless-midway-faas
+service: midway-faas-examples
 
 provider:
-  name: ''
+  name: aliyun
 
 functions:
   index:
@@ -12,8 +12,3 @@ functions:
           value: '0 0 8 * * *'
           payload: 'awesome-fc'
 
-plugins:
-  - serverless-midway-plugin
-
-package:
-  artifact: midwayFaas.zip

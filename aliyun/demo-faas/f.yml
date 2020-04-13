@@ -7,6 +7,3 @@ provider:
 functions:
   emptyTrigger:
     handler: index.handler
-
-package:
-  artifact: code.zip
