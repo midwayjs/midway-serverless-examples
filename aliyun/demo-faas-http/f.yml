@@ -11,33 +11,36 @@ functions:
       - http:
           method: get
           path: /
-  httpPostTrigger:
-    handler: index.post
-    events:
       - http:
-          method: post
-          path: /
-  httpPutTrigger:
-    handler: index.put
-    events:
-      - http:
-          method: put
-          path: /
-  httpDeleteTrigger:
-    handler: index.del
-    events:
-      - http:
-          method: delete
-          path: /
-  httpHeadTrigger:
-    handler: index.head
-    events:
-      - http:
-          method: head
-          path: /
-  httpAllTrigger:
-    handler: index.all
-    events:
-      - http:
-          method: any
+          method: get
           path: /api
+  # httpPostTrigger:
+  #   handler: index.post
+  #   events:
+  #     - http:
+  #         method: post
+  #         path: /
+  # httpPutTrigger:
+  #   handler: index.put
+  #   events:
+  #     - http:
+  #         method: put
+  #         path: /
+  # httpDeleteTrigger:
+  #   handler: index.del
+  #   events:
+  #     - http:
+  #         method: delete
+  #         path: /
+  # httpHeadTrigger:
+  #   handler: index.head
+  #   events:
+  #     - http:
+  #         method: head
+  #         path: /
+  # httpAllTrigger:
+  #   handler: index.all
+  #   events:
+  #     - http:
+  #         method: any
+  #         path: /api

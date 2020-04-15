@@ -1,5 +1,5 @@
 import { Func, Inject, Provide } from '@midwayjs/decorator';
-import { FaaSContext, FunctionHandler, FC } from '@midwayjs/faas';
+import { FaaSContext, FunctionHandler} from '@midwayjs/faas';
 
 @Provide()
 @Func('index.handler')
@@ -8,12 +8,14 @@ export class IndexService implements FunctionHandler {
   @Inject()
   ctx: FaaSContext;  // context
 
-  async handler(event: FC.APIGatewayEvent) {
+  async handler() {
+    this.ctx.set('x-midway-faas-type', '444444')
     return {
-      isBase64Encoded: false,
-      statusCode: 200,
-      headers: {},
-      body: 'hello world',
-    } as FC.APIGatewayResponse;
+      headers: this.ctx.headers,
+      method: this.ctx.method,
+      path: this.ctx.path,
+      body: this.ctx.request.body,
+      params: this.ctx.params
+    }
   }
 }

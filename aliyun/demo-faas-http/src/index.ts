@@ -9,7 +9,7 @@ export class APIService {
 
   @Func('index.get')
   async get() {
-    return this.ctx.method;
+    return this.ctx.path;
   }
 
   @Func('index.post')

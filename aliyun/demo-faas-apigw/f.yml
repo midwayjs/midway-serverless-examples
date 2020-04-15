@@ -8,4 +8,4 @@ functions:
   apiGatewayTrigger:
     handler: index.handler
     events:
-      - apigw
+      - apigw: true
