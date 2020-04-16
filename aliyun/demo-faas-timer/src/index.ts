@@ -1,13 +1,19 @@
-import { FaaSContext, func, inject, provide } from '@midwayjs/faas';
+import { FaaSContext, FC } from '@midwayjs/faas';
+import {  Func, Inject, Provide } from '@midwayjs/decorator';
 
-@provide()
-@func('index.handler')
-export class HelloService {
+@Provide()
+export class TimerTriggerTest {
 
-  @inject()
+  @Inject()
   ctx: FaaSContext;  // context
 
-  async handler(event) {
+  @Func('every.handler')
+  async everyHandler(event: FC.TimerEvent) {
+    return 'hello world';
+  }
+
+  @Func('cron.handler')
+  async cronHandler(event: FC.TimerEvent) {
     return 'hello world';
   }
 }

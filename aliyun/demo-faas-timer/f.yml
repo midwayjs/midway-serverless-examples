@@ -4,15 +4,15 @@ provider:
   name: aliyun
 
 functions:
-  index:
-    handler: index.handler
+  everyTimerTrigger:
+    handler: every.handler
     events:
       - timer:
           type: every
           value: 1m               # 每隔一分钟
           payload: 'awesome-fc'
-  index2:
-    handler: index.handler
+  cronTimerTrigger:
+    handler: cron.handler
     events:
       - timer:
           type: cron
