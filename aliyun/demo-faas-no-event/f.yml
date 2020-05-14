@@ -1,0 +1,9 @@
+service:
+  name: midway-faas-examples
+
+provider:
+  name: aliyun
+
+functions:
+  emptyTrigger:
+    handler: index.handler

@@ -1,0 +1,12 @@
+service: midway-faas-examples
+
+provider:
+  name: aliyun
+
+functions:
+  mqTrigger:
+    handler: mq.handler
+    events:
+      - mq:
+          topic: test-topic
+

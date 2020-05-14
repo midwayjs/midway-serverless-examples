@@ -8,7 +8,6 @@ functions:
   apiGatewayTrigger:
     handler: index.handler
     events:
-      - apigw
-
-package:
-  artifact: code.zip
+      - apigw:                ## api 网关暂时不支持配置，这里写了只是为了本地测试
+          method: get
+          path: /api

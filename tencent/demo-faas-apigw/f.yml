@@ -1,0 +1,13 @@
+service:
+  name: midway-faas-examples
+
+provider:
+  name: tencent
+
+functions:
+  apiGatewayTrigger:
+    handler: index.handler
+    events:
+      - apigw:
+          method: get
+          path: /api

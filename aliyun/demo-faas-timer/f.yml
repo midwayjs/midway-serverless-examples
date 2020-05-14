@@ -1,0 +1,21 @@
+service: midway-faas-examples
+
+provider:
+  name: aliyun
+
+functions:
+  everyTimerTrigger:
+    handler: every.handler
+    events:
+      - timer:
+          type: every
+          value: 1m               # 每隔一分钟
+          payload: 'awesome-fc'
+  cronTimerTrigger:
+    handler: cron.handler
+    events:
+      - timer:
+          type: cron
+          value: '0 0 4 * * *'     # 每天4:00触发  https://help.aliyun.com/document_detail/68172.html
+          payload: 'awesome-fc'
+

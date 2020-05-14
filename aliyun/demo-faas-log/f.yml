@@ -1,0 +1,17 @@
+service: midway-faas-examples
+
+provider:
+  name: aliyun
+
+functions:
+  index:
+    handler: index.handler
+    events:
+      - log:
+          source: logstore1                               # required
+          retryTime: 1                                    # default is 1
+          interval: 20                                    # default is 30
+          project: test                                   # required
+          log: logstore                                   # required
+          role: 'acs:ram::1234567890:role/fc-invoke-test' # option
+          version: 'LATEST'                               # option

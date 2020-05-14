@@ -1,0 +1,13 @@
+service: midway-faas-examples
+
+provider:
+  name: tencent
+
+functions:
+  cronTimerTrigger:
+    handler: cron.handler
+    events:
+      - timer:
+          type: cron
+          value: '*/5 * * * *'
+          payload: 'test'

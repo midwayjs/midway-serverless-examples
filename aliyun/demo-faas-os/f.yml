@@ -1,0 +1,17 @@
+service: midway-faas-examples
+
+provider:
+  name: aliyun
+
+functions:
+  index:
+    handler: index.handler
+    events:
+      - os: # os | oss | cos
+          bucket: testoss
+          events:
+            - oss:ObjectCreated:PutObject
+          filterPrefix: source/
+          filterSuffix: .png
+          role: 'acs:ram::1234567890:role/fc-invoke-test'
+          version: 'LATEST' 

@@ -1,0 +1,16 @@
+service: midway-faas-examples
+
+provider:
+  name: tencent
+
+functions:
+  index:
+    handler: index.handler
+    events:
+      - os:
+          bucket: cli-appid.cos.ap-beijing.myqcloud.com
+          filter:
+            prefix: filterdir/
+            suffix: .jpg
+          events: cos:ObjectCreated:*
+          enable: false

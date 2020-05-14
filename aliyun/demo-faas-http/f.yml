@@ -1,16 +1,46 @@
 service:
-  name: midway-faas-examples-aliyun
+  name: midway-faas-examples
 
 provider:
   name: aliyun
 
 functions:
-  httpTrigger:
-    handler: index.handler
+  httpGetTrigger:
+    handler: index.get
     events:
       - http:
-        method: get
-        path: /
-
-package:
-  artifact: code.zip
+          method: get
+          path: /
+      - http:
+          method: get
+          path: /api
+  # httpPostTrigger:
+  #   handler: index.post
+  #   events:
+  #     - http:
+  #         method: post
+  #         path: /
+  # httpPutTrigger:
+  #   handler: index.put
+  #   events:
+  #     - http:
+  #         method: put
+  #         path: /
+  # httpDeleteTrigger:
+  #   handler: index.del
+  #   events:
+  #     - http:
+  #         method: delete
+  #         path: /
+  # httpHeadTrigger:
+  #   handler: index.head
+  #   events:
+  #     - http:
+  #         method: head
+  #         path: /
+  # httpAllTrigger:
+  #   handler: index.all
+  #   events:
+  #     - http:
+  #         method: any
+  #         path: /api

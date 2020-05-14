@@ -1,6 +1,8 @@
 {
   "packages": [
-    "aliyun/demo-*"
+    "aliyun/demo-*",
+    "tencent/demo-*",
+    "integration/*"
   ],
   "command": {
     "bootstrap": {
@@ -15,5 +17,5 @@
     }
   },
   "npmClient": "npm",
-  "version": "1.0.0"
+  "version": "independent"
 }
