@@ -1,3 +1,3 @@
-# midway faas with react
+# midway faas with vue
 
-midway faas + react 一体化开发脚手架
+midway faas + vue 一体化开发脚手架
