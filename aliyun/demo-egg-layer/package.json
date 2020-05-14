@@ -1,7 +1,7 @@
 {
   "name": "@aliyun/demo-egg-layer",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Midway Faas Template for the Serverless Framework and Aliyun",
   "main": "index.js",
   "license": "MIT",
@@ -11,9 +11,9 @@
     "midway"
   ],
   "dependencies": {
+    "@midwayjs/egg-layer": "*",
     "egg": "^2.15.1",
-    "egg-scripts": "^2.11.0",
-    "@midwayjs/egg-layer": "*"
+    "egg-scripts": "^2.11.0"
   },
   "scripts": {
     "start": "egg-scripts start --daemon --title=egg-server-test-eaas",
