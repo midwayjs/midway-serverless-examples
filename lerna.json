@@ -1,7 +1,8 @@
 {
   "packages": [
     "aliyun/demo-*",
-    "tencent/demo-*"
+    "tencent/demo-*",
+    "integration/*"
   ],
   "command": {
     "bootstrap": {
