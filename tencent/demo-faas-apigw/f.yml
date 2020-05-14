@@ -2,12 +2,12 @@ service:
   name: midway-faas-examples
 
 provider:
-  name: aliyun
+  name: tencent
 
 functions:
   apiGatewayTrigger:
     handler: index.handler
     events:
-      - apigw:                ## api 网关暂时不支持配置，这里写了只是为了本地测试
+      - apigw:
           method: get
           path: /api

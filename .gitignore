@@ -3,3 +3,6 @@
 node_modules
 *.zip
 .DS_Store
+package-lock.json
+.vscode
+*.log

@@ -1,0 +1,15 @@
+{
+  "name": "@aliyun/demo-faas-event-timer",
+  "version": "1.0.0",
+  "description": "Midway Faas Template for the Serverless Framework and Tencent",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "serverless",
+    "tencent",
+    "midway"
+  ],
+  "dependencies": {
+    "@midwayjs/faas": "*"
+  }
+}

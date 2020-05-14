@@ -2,7 +2,7 @@
   "name": "open-midway-faas-examples",
   "version": "1.0.0",
   "devDependencies": {
-    "@midwayjs/serverless-invoke": "beta",
+    "@midwayjs/serverless-invoke": "*",
     "@types/mocha": "^5.2.5",
     "@types/node": "^10.12.18",
     "lerna": "3",
