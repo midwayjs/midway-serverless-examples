@@ -1,5 +1,6 @@
 {
   "name": "@aliyun/demo-faas-event-log",
+  "private": true,
   "version": "1.0.0",
   "description": "Midway Faas Template for the Serverless Framework and Aliyun",
   "main": "index.js",
