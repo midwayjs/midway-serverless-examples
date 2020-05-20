@@ -6,3 +6,4 @@ node_modules
 package-lock.json
 .vscode
 *.log
+integration/todo-antd-umi-mysql
