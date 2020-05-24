@@ -16,6 +16,7 @@
     "jsx": "react",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
     "inlineSourceMap": true,
     "noImplicitThis": true,
     "noUnusedLocals": false,
