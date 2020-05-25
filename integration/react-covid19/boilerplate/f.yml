@@ -1,0 +1,22 @@
+service: serverless-covid-19
+
+provider:
+  name: aliyun
+  runtime: nodejs10
+
+functions:
+  render:
+    handler: render.handler
+    events:
+      - apigw:
+          path: /*
+  index:
+    handler: index.handler
+    events:
+      - apigw:
+          path: /api/index
+
+package:
+  include:
+    - build
+  artifact: code.zip

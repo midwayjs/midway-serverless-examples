@@ -1,0 +1,37 @@
+service: serverless-hello-world
+
+provider:
+  name: aliyun
+  runtime: nodejs10
+
+functions:
+  render:
+    handler: render.handler
+    events:
+      - apigw:
+          path: /*
+  list:
+    handler: todo.list
+    events:
+      - apigw:
+          path: /api/list
+  update:
+    handler: todo.update
+    events:
+      - apigw:
+          path: /api/update
+  remove:
+    handler: todo.remove
+    events:
+      - apigw:
+          path: /api/remove
+  add:
+    handler: todo.add
+    events:
+      - apigw:
+          path: /api/add
+
+package:
+  include:
+    - build
+  artifact: code.zip
