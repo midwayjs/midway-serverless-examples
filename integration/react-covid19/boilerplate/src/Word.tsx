@@ -47,7 +47,7 @@ function joinData(geodata: any, ncovData: any) {
   return geodata;
 }
 
-function numFormat(num) {
+function numFormat(num: any) {
   return num.toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,');
 }
 
@@ -85,8 +85,8 @@ export default React.memo(function Map() {
   }
 
   let total = 0;
-  const allCounts = [];
-  filldata && filldata.features.forEach(item => {
+  const allCounts: any = [];
+  filldata && filldata.features.forEach((item: any) => {
     if (item && item.properties && item.properties.countryName && item.properties.confirmedCount) {
       total += item.properties.confirmedCount;
       allCounts.push({
@@ -95,7 +95,7 @@ export default React.memo(function Map() {
       });
     }
   })
-  allCounts.sort((a,b) => {
+  allCounts.sort((a: any,b: any) => {
     return b.count - a.count;
   })
 
@@ -108,12 +108,12 @@ export default React.memo(function Map() {
         </div>
         <div className='wordList'>
           {
-            allCounts.map(item => {
+            allCounts.map((item: any) => {
               return <div className='wordItem'><span>{ numFormat(item.count) }</span>{ item.countryName }</div>
             })
           }
         </div>
-        <div className='bottom'>数据非实时 Powered by <a href='https://github.com/midwayjs/midway-faas/' target='_blank'>🔱 Midway FaaS</a></div>
+        <div className='bottom'>数据非实时 Powered by <a href='https://github.com/midwayjs/midway-faas/' rel="noopener noreferrer" target='_blank'>Midway FaaS</a></div>
       </div>
       <MapboxScene
         map={{
