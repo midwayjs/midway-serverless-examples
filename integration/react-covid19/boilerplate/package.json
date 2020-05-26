@@ -1,11 +1,10 @@
 {
-  "name": "faas-demo",
+  "name": "midway-faas-covid19-demo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@antv/l7-react": "^2.2.3",
-    "@midwayjs/decorator": "^2.0.16",
-    "@midwayjs/faas": "^0.2.76",
+    "@midwayjs/faas": "^0.3.0",
     "@midwayjs/faas-middleware-static": "^0.0.1",
     "axios": "^0.19.2"
   },
@@ -13,8 +12,8 @@
     "tsCodeRoot": "src/apis"
   },
   "scripts": {
-    "dev": "npm run watch & npx f invoke -p",
-    "watch": "node scripts/watch.js",
+    "dev": "npm run watch",
+    "watch": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

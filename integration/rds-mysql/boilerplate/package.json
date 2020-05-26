@@ -1,10 +1,9 @@
 {
-  "name": "faas-rds-demo",
+  "name": "midway-faas-rds-demo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@midwayjs/decorator": "^2.0.16",
-    "@midwayjs/faas": "^0.2.76",
+    "@midwayjs/faas": "^0.3.0",
     "@midwayjs/faas-middleware-static-file": "^0.0.1",
     "mysql2": "^2.1.0",
     "sequelize": "^5.21.7",

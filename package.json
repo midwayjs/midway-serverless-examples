@@ -6,7 +6,8 @@
     "@types/mocha": "^5.2.5",
     "@types/node": "^10.12.18",
     "lerna": "3",
-    "typescript": "^3.5.1"
+    "typescript": "^3.5.1",
+    "midway-bin": "2"
   },
   "scripts": {
     "test": "lerna run test",

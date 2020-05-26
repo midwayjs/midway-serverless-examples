@@ -1,6 +1,6 @@
 {
-  "name": "@midwayjs-examples/faas-with-react",
-  "version": "1.0.3",
+  "name": "@midwayjs-examples/faas-with-covid19",
+  "version": "1.0.0",
   "dependencies": {
     "light-generator": "1"
   },
@@ -12,7 +12,7 @@
     "url": "http://github.com/midwayjs/midway-faas-examples.git"
   },
   "scripts": {
-    "test": "../node_modules/.bin/midway-bin test --timeout=120000",
+    "test": "../../node_modules/.bin/midway-bin test --timeout=120000",
     "cov": "../node_modules/.bin/midway-bin cov --timeout=120000"
   },
   "files": [

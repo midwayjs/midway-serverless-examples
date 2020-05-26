@@ -1,4 +1,4 @@
-service: serverless-covid-19
+service: midway-faas-covid19-demo
 
 provider:
   name: aliyun

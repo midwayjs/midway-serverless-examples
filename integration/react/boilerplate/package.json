@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@midwayjs/faas": "^0.2.76",
+    "@midwayjs/faas": "^0.3.0",
     "@midwayjs/faas-middleware-static-file": "^0.0.1"
   },
   "midway-integration": {
@@ -39,7 +39,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
-    "@midwayjs/faas-dev-pack": "^0.2.98",
+    "@midwayjs/faas-dev-pack": "^0.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
