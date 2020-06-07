@@ -19,25 +19,20 @@ $ npm run dev
 
 ### 配置数据库
 
-默认为读取云工作台应用配置中的环境变量，亦可手动在 `config/config.default.ts` 文件内进行修改
+默认为读取环境变量，亦可手动在 `config/config.default.ts` 文件内进行修改
 
 | 环境变量名 | 释义 |
 | --- | --- |
-| MIDWAY_RDS_HOST | RDS 数据库地址 |
-| MIDWAY_RDS_PORT | RDS 数据库端口，默认为3306 |
-| MIDWAY_RDS_DBNAME | RDS 数据库名称 |
-| MIDWAY_RDS_USERNAME | RDS 数据库用户名 |
-| MIDWAY_RDS_PASSWORD | RDS 数据库密码 |
+| MIDWAY_OTS_ACCESSKEY | 阿里云账户 AccessKey Id |
+| MIDWAY_OTS_SECRET | 阿里云账户 AccessKey Secret |
+| MIDWAY_OTS_ENDPOINT | 表格存储实例公网访问地址  |
+| MIDWAY_OTS_INSTANCE | 表格存储实例名称  |
 
 ### 构建
 ```shell
 # 发布前需要构建前端代码
 $ npm run build
 ```
-
-### 部署
-点击左侧菜单栏第一个Tab，进行发布
-
 
 ## About Midway FaaS
 

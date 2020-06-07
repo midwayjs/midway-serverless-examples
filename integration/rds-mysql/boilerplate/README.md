@@ -19,7 +19,7 @@ $ npm run dev
 
 ### 配置数据库
 
-默认为读取云工作台应用配置中的环境变量，亦可手动在 `config/config.default.ts` 文件内进行修改
+默认为读取环境变量，亦可手动在 `config/config.default.ts` 文件内进行修改
 
 | 环境变量名 | 释义 |
 | --- | --- |
@@ -34,10 +34,6 @@ $ npm run dev
 # 发布前需要构建前端代码
 $ npm run build
 ```
-
-### 部署
-点击左侧菜单栏第一个Tab，进行发布
-
 
 ## About Midway FaaS
 
