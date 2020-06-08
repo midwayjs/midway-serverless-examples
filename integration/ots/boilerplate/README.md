@@ -15,8 +15,6 @@ $ npm i --registry=https://registry.npm.taobao.org
 $ npm run dev
 ```
 
-> Tips: 可执行 `npm run local:url` 单独获取本地 Dev Server 的URL链接
-
 ### 创建OTS表
 
 #### 1. 创建实例
