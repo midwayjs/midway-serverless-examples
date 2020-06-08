@@ -49,11 +49,6 @@ $ npm run dev
 
 ![OTS](https://gw.alicdn.com/tfs/TB18n63JxD1gK0jSZFsXXbldVXa-2374-804.png)
 
-### 构建
-```shell
-# 发布前需要构建前端代码
-$ npm run build
-```
 
 ## About Midway FaaS
 
