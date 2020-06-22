@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@midwayjs/faas": "^0.3.0",
-    "@midwayjs/faas-middleware-static-file": "^0.0.1"
+    "@midwayjs/faas-middleware-static-file": "^1.0.0"
   },
   "midway-integration": {
     "tsCodeRoot": "src/apis"

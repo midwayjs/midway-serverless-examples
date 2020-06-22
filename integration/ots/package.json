@@ -1,6 +1,6 @@
 {
-  "name": "@midwayjs-examples/faas-with-mysql",
-  "version": "1.0.1",
+  "name": "@midwayjs-examples/faas-with-ots",
+  "version": "1.0.0",
   "dependencies": {
     "light-generator": "1"
   },

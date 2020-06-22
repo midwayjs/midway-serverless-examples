@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@midwayjs/faas": "^0.3.0",
-    "@midwayjs/faas-middleware-static-file": "^0.0.1",
+    "@midwayjs/faas-middleware-static-file": "^1.0.0",
     "otswhere": "^0.0.4",
     "tablestore": "^5.0.7",
     "todomvc-app-css": "^2.3.0"

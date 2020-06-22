@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@midwayjs/faas": "^0.3.0",
-    "@midwayjs/faas-middleware-static-file": "^0.0.2",
+    "@midwayjs/faas-middleware-static-file": "^1.0.0",
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",

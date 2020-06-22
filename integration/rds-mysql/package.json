@@ -1,5 +1,5 @@
 {
-  "name": "@midwayjs-examples/faas-with-mysql",
+  "name": "@midwayjs-examples/faas-with-rds",
   "version": "1.0.1",
   "dependencies": {
     "light-generator": "1"
