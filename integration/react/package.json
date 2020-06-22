@@ -1,6 +1,6 @@
 {
   "name": "@midwayjs-examples/faas-with-react",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "dependencies": {
     "light-generator": "1"
   },

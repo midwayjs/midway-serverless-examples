@@ -1,6 +1,6 @@
 {
   "name": "@midwayjs-examples/faas-with-rds",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "dependencies": {
     "light-generator": "1"
   },
