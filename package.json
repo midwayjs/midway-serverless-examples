@@ -16,7 +16,7 @@
     "purge": "npm run clean && rm -rf package-lock.json && rm -rf node_modules",
     "bootstrap": "rm -f ./packages/.DS* && lerna bootstrap",
     "clean": "lerna clean --yes && rm -rf ./packages/**/package-lock.json",
-    "release": "lerna publish"
+    "release": "lerna publish --contents integration"
   },
   "engines": {
     "node": ">= 10"
