@@ -5,7 +5,7 @@ function TodoCount({ todosLeft }) {
 
   return (
     <span className="todo-count">
-      <strong>{count}</strong> item left Powered by <a href="https://github.com/midwayjs/midway-faas/">Midway FaaS</a>
+      <strong>{count}</strong> item left Powered by <a href="https://github.com/midwayjs/midway/">Midway FaaS</a>
     </span>
   )
 }

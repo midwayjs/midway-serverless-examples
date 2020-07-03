@@ -1,4 +1,4 @@
-# midway faas with react-covid19
+# Midway Serverless with react-covid19
 
 midway faas + react + covid19 data
 

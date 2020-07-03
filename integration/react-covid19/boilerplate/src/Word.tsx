@@ -113,7 +113,7 @@ export default React.memo(function Map() {
             })
           }
         </div>
-        <div className='bottom'>数据非实时 Powered by <a href='https://github.com/midwayjs/midway-faas/' rel="noopener noreferrer" target='_blank'>Midway FaaS</a></div>
+        <div className='bottom'>数据非实时 Powered by <a href='https://github.com/midwayjs/midway/' rel="noopener noreferrer" target='_blank'>Midway Serverless</a></div>
       </div>
       <MapboxScene
         map={{

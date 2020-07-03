@@ -1,4 +1,4 @@
-# midway faas with react
+# Midway Serverless with react
 
 midway faas + react 一体化开发脚手架
 

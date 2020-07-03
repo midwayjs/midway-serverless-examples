@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@midwayjs/faas": "^0.3.0",
+    "@midwayjs/faas": "^1.0.0",
     "@midwayjs/faas-middleware-static-file": "^1.0.0",
     "mysql2": "^2.1.0",
     "sequelize": "^5.21.7",

@@ -1,4 +1,4 @@
-# Midway Faas
+# Midway Serverless
 
 ## 快速开始
 
@@ -31,4 +31,4 @@ $ npm i
 
 ## 如何使用？
 
-[Midway FaaS](https://github.com/midwayjs/midway-faas)
+[Midway Serverlesss](https://github.com/midwayjs/midway)

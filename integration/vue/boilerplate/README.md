@@ -1,4 +1,4 @@
-# Midway FaaS with Vue demo
+# Midway Serverless with Vue demo
 
 ## 安装命令行工具
 

@@ -1,4 +1,4 @@
-# midway faas with ots
+# Midway Serverless with ots
 
 midway faas + ots 一体化开发脚手架
 

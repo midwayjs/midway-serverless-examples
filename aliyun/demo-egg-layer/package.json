@@ -2,7 +2,7 @@
   "name": "@aliyun/demo-egg-layer",
   "private": true,
   "version": "1.0.1",
-  "description": "Midway Faas Template for the Serverless Framework and Aliyun",
+  "description": "Midway Serverless Template for the Serverless Framework and Aliyun",
   "main": "index.js",
   "license": "MIT",
   "keywords": [

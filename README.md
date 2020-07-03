@@ -1,4 +1,4 @@
-# Midway FaaS Examples
+# Midway Serverless Examples
 
 Directory Detail.
 

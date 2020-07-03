@@ -1,4 +1,4 @@
-# midway faas with mysql
+# Midway Serverless with mysql
 
 midway faas + mysql 一体化开发脚手架
 

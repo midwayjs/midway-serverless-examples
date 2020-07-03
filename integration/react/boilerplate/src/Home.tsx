@@ -26,8 +26,8 @@ export default () => {
         <p>
           Edit <code>/apis/index.ts</code> and save to reload
         </p>
-        快来给 Midway FaaS Star 一个吧！
-        <iframe style={{marginTop: 20, border: 0}}  src="https://ghbtns.com/github-btn.html?user=midwayjs&repo=midway-faas&type=star&count=true&size=large" scrolling="0" width="150px" height="40px"></iframe>
+        快来给 Midway Serverless Star 一个吧！
+        <iframe style={{marginTop: 20, border: 0}}  src="https://ghbtns.com/github-btn.html?user=midwayjs&repo=midway&type=star&count=true&size=large" scrolling="0" width="150px" height="40px"></iframe>
       </header>
     </div>
   );

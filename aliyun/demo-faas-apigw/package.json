@@ -2,7 +2,7 @@
   "name": "@aliyun/demo-faas-apigw",
   "private": true,
   "version": "1.0.1",
-  "description": "Midway Faas Template for the Serverless Framework and Aliyun",
+  "description": "Midway Serverless Template for the Serverless Framework and Aliyun",
   "main": "index.js",
   "license": "MIT",
   "keywords": [
@@ -10,6 +10,6 @@
     "midway"
   ],
   "dependencies": {
-    "@midwayjs/faas": "*"
+    "@midwayjs/faas": "^1.0.0"
   }
 }
