@@ -1,6 +1,6 @@
 {
   "name": "@midwayjs-examples/faas-with-vue",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "dependencies": {
     "light-generator": "1"
   },
