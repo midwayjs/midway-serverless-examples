@@ -9,7 +9,10 @@
     "axios": "^0.19.2"
   },
   "midway-integration": {
-    "tsCodeRoot": "src/apis"
+    "tsCodeRoot": "src/apis",
+    "lifecycle": {
+      "before:package:cleanup": "npm run build"
+    }
   },
   "scripts": {
     "dev": "npm run watch",

@@ -17,14 +17,11 @@ $ npm run dev
 
 > Tips: 可执行 `npm run local:url` 单独获取本地Dev Server 的URL链接
 
-### 构建
-```shell
-# 发布前需要构建前端代码
-$ npm run build
-```
 
 ### 部署
-点击左侧菜单栏第一个Tab，进行发布
+```shell
+$ f deploy
+```
 
 
 ## About Midway FaaS

@@ -10,7 +10,10 @@
     "todomvc-app-css": "^2.3.0"
   },
   "midway-integration": {
-    "tsCodeRoot": "src/apis"
+    "tsCodeRoot": "src/apis",
+    "lifecycle": {
+      "before:package:cleanup": "npm run build"
+    }
   },
   "scripts": {
     "dev": "npm run local:url & npm run watch",

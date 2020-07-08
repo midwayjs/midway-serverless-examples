@@ -8,12 +8,12 @@ functions:
   render:
     handler: render.handler
     events:
-      - apigw:
+      - http:
           path: /*
   index:
     handler: index.handler
     events:
-      - apigw:
+      - http:
           path: /api/index
 
 package:

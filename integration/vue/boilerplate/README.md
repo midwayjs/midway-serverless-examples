@@ -19,12 +19,6 @@ $ npm i --registry=https://registry.npm.taobao.org
 $ npm run serve
 ```
 
-## 构建
-```shell
-# 发布前需要构建前端代码
-$ npm run build
-```
-
 ## 部署
 
 ```shell

@@ -29,10 +29,10 @@ $ npm run dev
 | MIDWAY_RDS_USERNAME | RDS 数据库用户名 |
 | MIDWAY_RDS_PASSWORD | RDS 数据库密码 |
 
-### 构建
+### 发布
 ```shell
 # 发布前需要构建前端代码
-$ npm run build
+$ f deploy
 ```
 
 ## About Midway FaaS

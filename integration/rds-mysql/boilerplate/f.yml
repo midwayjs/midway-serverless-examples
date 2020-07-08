@@ -8,27 +8,27 @@ functions:
   render:
     handler: render.handler
     events:
-      - apigw:
+      - http:
           path: /*
   list:
     handler: todo.list
     events:
-      - apigw:
+      - http:
           path: /api/list
   update:
     handler: todo.update
     events:
-      - apigw:
+      - http:
           path: /api/update
   remove:
     handler: todo.remove
     events:
-      - apigw:
+      - http:
           path: /api/remove
   add:
     handler: todo.add
     events:
-      - apigw:
+      - http:
           path: /api/add
 
 package:

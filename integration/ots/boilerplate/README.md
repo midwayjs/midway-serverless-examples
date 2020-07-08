@@ -15,6 +15,13 @@ $ npm i --registry=https://registry.npm.taobao.org
 $ npm run dev
 ```
 
+
+### 部署
+```shell
+$ f deploy
+```
+
+
 ### 创建OTS表
 
 #### 1. 创建实例
