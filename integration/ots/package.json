@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/midwayjs/midway-faas-examples.git"
+    "url": "http://github.com/midwayjs/midway-serverless-examples.git"
   },
   "scripts": {
     "test": "../node_modules/.bin/midway-bin test --timeout=120000",

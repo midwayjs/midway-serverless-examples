@@ -1,0 +1,13 @@
+service:
+  name: midway-faas-examples
+
+provider:
+  name: aliyun
+
+functions:
+  index:
+    handler: index.handler
+    events:
+      - http:
+          method: get
+          path: /*

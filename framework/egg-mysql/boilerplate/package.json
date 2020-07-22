@@ -1,0 +1,17 @@
+{
+  "name": "midway-demo-with-egg-mysql",
+  "private": true,
+  "version": "1.0.2",
+  "description": "Midway Serverless Template with egg-mysql",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "serverless",
+    "midway"
+  ],
+  "dependencies": {
+    "@midwayjs/faas": "^1.0.0",
+    "@midwayjs-component/egg": "^1.0.0",
+    "egg-mysql": "^3.0.0"
+  }
+}
