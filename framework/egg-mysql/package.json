@@ -1,6 +1,6 @@
 {
   "name": "@midwayjs-examples/faas-with-egg-mysql",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "dependencies": {
     "light-generator": "1"
   },
