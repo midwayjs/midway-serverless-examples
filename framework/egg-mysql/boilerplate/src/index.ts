@@ -1,5 +1,5 @@
 import { Provide, Func, Inject, Plugin } from '@midwayjs/decorator';
-import { FunctionHandler } from '@midwayjs/faas';
+import { FunctionHandler, FaaSContext } from '@midwayjs/faas';
 
 import * as assert from 'assert';
 
