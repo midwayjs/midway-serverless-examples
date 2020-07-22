@@ -1,6 +1,6 @@
 {
   "name": "@midwayjs-examples/faas-with-covid19",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "dependencies": {
     "light-generator": "1"
   },

@@ -1,6 +1,6 @@
 {
   "name": "@midwayjs-examples/faas-with-ots",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "dependencies": {
     "light-generator": "1"
   },
