@@ -5,6 +5,8 @@ function Todo({ todo, handleEdit }) {
   const [className, setClassName] = useState('')
   const [editVisible, setEditVisible] = useState(false)
 
+  todo.status = parseInt(todo.status || 0);
+
   const removeTodo = (evt) => {
     handleEdit({ ...todo, type: 'remove'})
   }
@@ -25,26 +27,26 @@ function Todo({ todo, handleEdit }) {
   }
 
   const handleCompleted = () => {
-    const completed = todo.status == 2
+    const completed = todo.status === 2
     const className = completed ? 'completed' : ''
 
     setClassName(className)
-    handleEdit({ ...todo, type: 'update', status: todo.status == 2 ? 1: 2 })
+    handleEdit({ ...todo, type: 'update', status: todo.status === 2 ? 1: 2 })
   }
 
   // This takes the place of componentShouldUpdate, etc.
   useEffect(() => {
     if (className !== 'editing') {
-      setClassName(todo.status == 2 ? 'completed' : '')
+      setClassName(todo.status === 2 ? 'completed' : '')
     }
-  })
+  }, [className, todo.status])
 
   const displayEdit = editVisible ? <EditTodoEntry editTodo={editTodo} cancelEdit={closeEdit} text={todo.todo} /> : null
 
   return (
     <li className={className}>
       <div className="view">
-        <input className="toggle" type="checkbox" onChange={handleCompleted} checked={todo.status == 2} />
+        <input className="toggle" type="checkbox" onChange={handleCompleted} checked={todo.status === 2} />
         <label onDoubleClick={showEdit}>{todo.todo}</label>
         <button className="destroy" onClick={removeTodo} />
       </div>
