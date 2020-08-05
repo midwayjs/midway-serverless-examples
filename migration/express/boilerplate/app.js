@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
-app.get('/get', (req, res) => {
+app.get('/', (req, res) => {
   res.send('This is demo for express app mirgrate to serverless');
 });
 
