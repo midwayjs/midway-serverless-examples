@@ -3,7 +3,8 @@
     "aliyun/demo-*",
     "tencent/demo-*",
     "integration/*",
-    "framework/*"
+    "framework/*",
+    "migration/*"
   ],
   "command": {
     "bootstrap": {
