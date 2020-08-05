@@ -6,6 +6,10 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/get', (req, res) => {
+  res.send('This is demo for express app mirgrate to serverless');
+});
+
+app.get('/get', (req, res) => {
   res.type('html')
   res.send('Hello World');
 });

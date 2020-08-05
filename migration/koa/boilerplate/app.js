@@ -5,6 +5,10 @@ const assert = require('assert');
 const router = new Router();
 const bodyParser = require('koa-bodyparser');
 
+router.get('/', (ctx, next) => {
+  ctx.body = 'This is demo for koa app mirgrate to serverless'
+});
+
 router.get('/get', (ctx, next) => {
   ctx.type = 'html';
   ctx.body = 'Hello World';
