@@ -1,0 +1,6 @@
+service: my-egg-demo  ## application name
+
+provider:
+  name: aliyun        ## cloud platform name
+
+deployType: egg       ## application deploy type

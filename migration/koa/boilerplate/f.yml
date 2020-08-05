@@ -1,0 +1,6 @@
+service: my-koa-demo  ## application name
+
+provider:
+  name: aliyun        ## cloud platform name
+
+deployType: koa       ## application deploy type

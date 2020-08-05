@@ -1,0 +1,23 @@
+{
+  "name": "my-koa-demo",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "koa": "^2.15.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^9.1.0"
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT"
+}
