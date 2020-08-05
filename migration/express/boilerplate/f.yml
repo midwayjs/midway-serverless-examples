@@ -1,0 +1,6 @@
+service: my-express-demo  ## application name
+
+provider:
+  name: aliyun        ## cloud platform name
+
+deployType: express       ## application deploy type
