@@ -11,7 +11,8 @@ functions:
           bucket: testoss
           events:
             - oss:ObjectCreated:PutObject
-          filterPrefix: source/
-          filterSuffix: .png
+          filter:
+            prefix: source/
+            suffix: .png
           role: 'acs:ram::1234567890:role/fc-invoke-test'
           version: 'LATEST' 
