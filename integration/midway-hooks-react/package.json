@@ -1,0 +1,58 @@
+{
+  "name": "midway-hooks-react-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "react-app-rewired start",
+    "dev": "npm run start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@midwayjs/faas": "^1.0.0",
+    "@midwayjs/faas-middleware-static-file": "^1.0.0",
+    "@midwayjs/hooks": "0.x.x"
+  },
+  "devDependencies": {
+    "@midwayjs/faas-cli-plugin-midway-hooks": "0.x.x",
+    "@midwayjs/faas-dev-pack": "^1.0.0",
+    "@midwayjs/hooks-loader": "^0.0.33",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "react": "^16.13.1",
+    "react-app-rewired": "^2.1.6",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "typescript": "^3.9.7"
+  },
+  "midway-integration": {
+    "tsCodeRoot": "src/apis",
+    "lifecycle": {
+      "before:package:cleanup": "npm run build"
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "react-hooks/rules-of-hooks": "off"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
