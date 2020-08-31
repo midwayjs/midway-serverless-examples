@@ -9,7 +9,7 @@
   "midway-integration": {
     "tsCodeRoot": "src/apis",
     "lifecycle": {
-      "before:package:cleanup": "npm run build"
+      "before:package:cleanup": "PUBLIC_URL=. npm run build"
     }
   },
   "scripts": {
@@ -46,6 +46,6 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "typescript": "~3.7.2"
+    "typescript": "^4"
   }
 }

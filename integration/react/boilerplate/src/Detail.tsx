@@ -4,7 +4,7 @@ export default () => {
   const [message, setMessage] = useState('')
 
   useEffect(() => {
-    fetch('/api/detail')
+    fetch('./api/detail')
       .then(resp => resp.json())
       .then(({message}) => setMessage(message))
   }, [])

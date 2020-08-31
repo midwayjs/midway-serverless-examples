@@ -20,3 +20,9 @@ package:
   include:
     - build
   artifact: code.zip
+
+aggregation:
+  agg-demo-all:
+    deployOrigin: false
+    functionsPattern:
+      - '*'

@@ -5,7 +5,7 @@ export default () => {
   const [message, setMessage] = useState('')
 
   useEffect(() => {
-    fetch('/api/index')
+    fetch('./api/index')
       .then(resp => resp.json())
       .then(({message}) => setMessage(message))
   }, [])

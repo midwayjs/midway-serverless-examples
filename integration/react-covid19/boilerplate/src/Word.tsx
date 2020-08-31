@@ -53,7 +53,7 @@ function numFormat(num: any) {
 
 export default React.memo(function Map() {
   const [data, setData] = React.useState();
-  const [filldata, setfillData] = React.useState();
+  const [filldata, setfillData] = React.useState<any>({});
   const [popupInfo, setPopupInfo] = React.useState<{
     lnglat: number[];
     feature: any;
@@ -65,7 +65,7 @@ export default React.memo(function Map() {
           'https://gw.alipayobjects.com/os/bmw-prod/e62a2f3b-ea99-4c98-9314-01d7c886263d.json',
         ).then((d) => d.json()),
         fetch(
-          '/api/index',
+          './api/index',
         ).then((d) => d.json()),
       ]);
       const worldData = joinData(geoData, ncovData.results);
@@ -86,15 +86,18 @@ export default React.memo(function Map() {
 
   let total = 0;
   const allCounts: any = [];
-  filldata && filldata.features.forEach((item: any) => {
-    if (item && item.properties && item.properties.countryName && item.properties.confirmedCount) {
-      total += item.properties.confirmedCount;
-      allCounts.push({
-        countryName: item.properties.countryName,
-        count: item.properties.confirmedCount,
-      });
-    }
-  })
+  if (filldata?.features) {
+    filldata.features.forEach((item: any) => {
+      if (item && item.properties && item.properties.countryName && item.properties.confirmedCount) {
+        total += item.properties.confirmedCount;
+        allCounts.push({
+          countryName: item.properties.countryName,
+          count: item.properties.confirmedCount,
+        });
+      }
+    });
+  }
+  
   allCounts.sort((a: any,b: any) => {
     return b.count - a.count;
   })

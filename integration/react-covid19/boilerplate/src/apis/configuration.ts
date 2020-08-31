@@ -2,10 +2,10 @@ import { Configuration } from '@midwayjs/decorator';
 
 @Configuration({
   importConfigs: [
-    './config/config.default'
+    './config/'
   ],
   imports: [
-    '@midwayjs/faas-middleware-static'
+    '@midwayjs/faas-middleware-static-file'
   ]
 })
 export class ContainerConfiguration {}
