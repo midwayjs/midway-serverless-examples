@@ -5,13 +5,13 @@
   "dependencies": {
     "@antv/l7-react": "^2.2.3",
     "@midwayjs/faas": "^1.0.0",
-    "@midwayjs/faas-middleware-static": "^0.0.1",
+    "@midwayjs/faas-middleware-static-file": "^1.0.0",
     "axios": "^0.19.2"
   },
   "midway-integration": {
     "tsCodeRoot": "src/apis",
     "lifecycle": {
-      "before:package:cleanup": "npm run build"
+      "before:package:cleanup": "PUBLIC_URL=. npm run build"
     }
   },
   "scripts": {
@@ -48,6 +48,6 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "typescript": "~3.7.2"
+    "typescript": "^4"
   }
 }

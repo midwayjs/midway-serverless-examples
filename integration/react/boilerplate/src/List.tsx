@@ -4,7 +4,7 @@ export default () => {
   const [list, setList] = useState([])
 
   useEffect(() => {
-    fetch('/api/list')
+    fetch('./api/list')
       .then(resp => resp.json())
       .then(({list}) => setList(list))
   }, [])
