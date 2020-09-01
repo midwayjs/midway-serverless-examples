@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld
-      msg="Welcome to Your Vue.js + Midway FaaS App"
+      msg="Welcome to Your Vue.js + Midway App"
       faasResponse="FaaS API Loading..."
     />
   </div>
