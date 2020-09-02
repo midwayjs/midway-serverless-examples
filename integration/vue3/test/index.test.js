@@ -36,7 +36,7 @@ describe('/test/index.test.js', () => {
     assert(fse.existsSync(path.join(targetPath, 'tsconfig.json')));
     assert(fse.existsSync(path.join(targetPath, 'package.json')));
     let contents = fse.readFileSync(path.join(targetPath, 'f.yml'), 'utf-8');
-    assert(/midway-faas-vue-demo/.test(contents));
+    assert(/midway-faas-vue3-demo/.test(contents));
   });
 
   it('test generate path', () => {
