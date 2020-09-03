@@ -1,0 +1,28 @@
+service: midway-piano
+
+provider:
+  name: aliyun
+  runtime: nodejs10
+
+functions:
+  render:
+    handler: render.handler
+    events:
+      - http:
+          path: /*
+  getAudio:
+    handler: getAudio.handler
+    events:
+      - http:
+          path: /api/getAudio
+
+aggregation:
+  agg-demo-all:
+    deployOrigin: false
+    functionsPattern:
+      - '*'
+
+package:
+  include:
+    - build
+  artifact: code.zip

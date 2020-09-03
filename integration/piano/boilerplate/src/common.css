@@ -1,0 +1,15 @@
+.common-container {
+  padding: 24px;
+  line-height: 24px;
+  color: #ccc;
+}
+.common-card {
+  margin-bottom: 24px;
+}
+.common-title {
+  font-size: 15px;
+  font-weight: bold;
+}
+a {
+  color: #fff;
+}

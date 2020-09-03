@@ -1,4 +1,4 @@
-service: serverless-hello-world
+service: serverless-ots-todo
 
 provider:
   name: aliyun
@@ -35,3 +35,9 @@ package:
   include:
     - build
   artifact: code.zip
+
+aggregation:
+  agg-demo-all:
+    deployOrigin: false
+    functionsPattern:
+      - '*'

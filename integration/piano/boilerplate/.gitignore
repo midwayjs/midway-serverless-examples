@@ -1,0 +1,3 @@
+node_modules
+build
+.faas_debug_tmp
