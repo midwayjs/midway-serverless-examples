@@ -1,0 +1,40 @@
+{
+  "name": "@midwayjs-examples/midway-hexo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "dev": "hexo server -p 3000",
+    "faas:dev": "npx f invoke -p"
+  },
+  "midway-integration": {
+    "lifecycle": {
+      "before:package:cleanup": "npm run build"
+    }
+  },
+  "hexo": {
+    "version": "4.2.1"
+  },
+  "dependencies": {
+    "@midwayjs/decorator": "^2.0.16",
+    "@midwayjs/faas": "^0.3.0",
+    "@midwayjs/faas-middleware-static-file": "^0.0.3",
+    "hexo": "^4.2.1",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-index": "^1.0.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-stylus": "^1.1.0",
+    "hexo-renderer-marked": "^2.0.0",
+    "hexo-server": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@midwayjs/faas-cli": "latest",
+    "@midwayjs/fcli-plugin-fc": "*",
+    "typescript": "~3.7.2"
+  }
+}

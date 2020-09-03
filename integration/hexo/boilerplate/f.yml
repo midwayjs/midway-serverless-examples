@@ -1,0 +1,15 @@
+service:
+  name: serverless-hexo
+provider:
+  name: aliyun
+  runtime: nodejs10
+functions:
+  render:
+    handler: render.handler
+    events:
+      - http:
+          path: /*
+package:
+  include:
+    - public
+  artifact: code.zip
