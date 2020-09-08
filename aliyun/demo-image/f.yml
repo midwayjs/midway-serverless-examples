@@ -1,0 +1,17 @@
+service: serverless-midway-demo-image
+
+provider:
+  name: 'aliyun'
+
+functions:
+  index:
+    handler: index.handler
+    events:
+      - http:
+          path: /image/*
+          method: get
+
+package:
+  include:
+    - public
+  artifact: code.zip
