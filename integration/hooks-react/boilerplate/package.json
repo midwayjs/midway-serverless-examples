@@ -17,7 +17,7 @@
   "devDependencies": {
     "@midwayjs/faas-cli-plugin-midway-hooks": "0.x.x",
     "@midwayjs/faas-dev-pack": "^1.0.0",
-    "@midwayjs/hooks-loader": "^0.0.33",
+    "@midwayjs/hooks-loader": "0.x.x",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
