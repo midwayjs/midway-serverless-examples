@@ -1,28 +1,30 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld :msg="message" />
+    <HelloWorld :msg="state.message" />
   </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
+import { onMounted, reactive } from 'vue';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 import { hello } from '../apis/lambda';
 
-@Options({
+export default {
   components: {
     HelloWorld,
   },
-})
-export default class Home extends Vue {
-  message = '';
-
-  created() {
-    hello().then((res) => {
-      console.log(res);
-      this.message = res.message;
+  setup() {
+    const state = reactive({
+      message: '',
     });
-  }
-}
+    onMounted(() => {
+      hello().then((res) => {
+        console.log(res);
+        state.message = res.message;
+      });
+    });
+    return { state };
+  },
+};
 </script>
