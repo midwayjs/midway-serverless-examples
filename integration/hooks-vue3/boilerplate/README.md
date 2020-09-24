@@ -7,7 +7,7 @@ npm i --registry=https://registry.npm.taobao.org
 ```
 
 ```shell
-# 启动 react 本地 watch 和 函数本地 Dev Server
+# 启动 vue 本地 watch 和 函数本地 Dev Server
 # 在终端中会输出 本地 Dev Server 的URL链接
 
 $ npm run serve
