@@ -24,9 +24,7 @@ module.exports = {
           // 忽略静态文件地址
           ignorePattern: (req) => {
             const { pathname } = URL.parse(req.url);
-            return /\.(js|css|map|json|png|jpg|jpeg|gif|svg|eot|woff2|ttf)$/.test(
-              pathname
-            );
+            return /\.(js|css|map|json|png|jpg|jpeg|gif|svg|eot|woff2|ttf)$/.test(pathname);
           },
         })
       );

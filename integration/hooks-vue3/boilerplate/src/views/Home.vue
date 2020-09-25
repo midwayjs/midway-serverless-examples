@@ -25,6 +25,7 @@ export default {
       message: 'Request Hello Function ……',
       postResult: '',
     });
+
     onMounted(() => {
       hello().then((res) => {
         console.log(res);
@@ -38,10 +39,12 @@ export default {
         state.postResult = res.answer;
       });
     };
+
     return { state, postMessage };
   },
 };
 </script>
+
 <style>
 .send-button {
   background-color: #42b983; /* Green */
@@ -56,6 +59,7 @@ export default {
   cursor: pointer;
   outline: none;
 }
+
 .send-button:hover {
   background-color: #39ce8a;
 }
