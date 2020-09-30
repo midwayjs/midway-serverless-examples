@@ -1,0 +1,119 @@
+.layout {
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  font-size: 15px;
+}
+.logo {
+  background: url('https://gw.alicdn.com/tfs/TB1LY4yimR26e4jSZFEXXbwuXXa-128-128.png') center/contain no-repeat;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.title {
+  font-size: 15px;
+  line-height: 48px;
+  margin-top: 32px;
+  border-top: 1px solid #eee;
+}
+
+.line {
+  position: relative;
+  display: flex;
+}
+input {
+  width: 100%;
+  padding: 0 12px;
+  line-height: 32px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  width: 100%;
+  margin-top: 12px;
+  min-height: 120px;
+  padding: 0 12px;
+  line-height: 32px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.addBtn {
+  padding: 0 12px;
+  cursor: pointer;
+  margin-left: 6px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 3px;
+  line-height: 32px;
+  white-space: nowrap;
+  font-size: 12px;
+  user-select: none;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.hookItem {
+  position: relative;
+  display: flex;
+  padding: 12px;
+  margin: 6px 0;
+}
+.hookItemLink {
+  word-break: break-all;
+  font-size: 12px;
+  padding-right: 6px;
+}
+.hookItemRemove {
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #efefef;
+}
+.sendBtn {
+  cursor: pointer;
+  margin-top: 12px;
+  background-color: rgb(144, 197, 95);
+  color: #fff;
+  border-radius: 3px;
+  line-height: 32px;
+  white-space: nowrap;
+  font-size: 12px;
+  text-align: center;
+  user-select: none;
+}
+.tip {
+  font-size: 12px;
+  color: #999;
+  word-break: break-all;
+  margin-top: 12px;
+}
+.copy {
+  font-size: 12px;
+  color: #ccc;
+  margin: 32px 0;
+  text-align: center;
+}
