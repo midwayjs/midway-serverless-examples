@@ -1,5 +1,5 @@
 {
-  "name": "@midwayjs-examples/faas-with-vue3",
+  "name": "@midwayjs-examples/faas-with-antd",
   "version": "1.0.0",
   "dependencies": {
     "light-generator": "1"
