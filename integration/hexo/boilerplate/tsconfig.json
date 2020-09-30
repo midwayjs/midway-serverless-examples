@@ -14,7 +14,7 @@
     "noEmit": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "inlineSourceMap": true,
+    "inlineSourceMap": false,
     "noImplicitThis": true,
     "noImplicitAny": false,
     "noUnusedLocals": false,

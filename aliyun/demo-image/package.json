@@ -1,0 +1,16 @@
+{
+  "name": "@aliyun/demo-image",
+  "private": true,
+  "version": "1.0.2",
+  "description": "Midway Serverless Template for the Serverless Framework and Aliyun",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "serverless",
+    "aliyun",
+    "midway"
+  ],
+  "dependencies": {
+    "@midwayjs/faas": "^1.0.0"
+  }
+}
