@@ -1,0 +1,42 @@
+{
+  "name": "midway-hooks-vue3",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@midwayjs/faas": "^1.2.1",
+    "@midwayjs/faas-middleware-static-file": "^1.0.0",
+    "@midwayjs/hooks": "0.x.x",
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0-0",
+    "vue-router": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@midwayjs/faas-cli-plugin-midway-hooks": "0.x.x",
+    "@midwayjs/fcli-command-core": "^1.2.12",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0-0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "eslint": "^7.9.0",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "typescript": "~3.9.3",
+    "vue-cli-plugin-midway-hooks": "0.x.x"
+  },
+  "midway-integration": {
+    "tsCodeRoot": "src/apis",
+    "lifecycle": {
+      "before:package:cleanup": "npm run build"
+    }
+  }
+}
