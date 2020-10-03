@@ -1,0 +1,24 @@
+.layout {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+}
+
+.layout-header {
+  display: flex;
+  padding: 12px 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.layout-header-btn {
+  margin: 0 12px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.layout-header-btn-current {
+  opacity: 1;
+}
