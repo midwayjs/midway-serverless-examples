@@ -1,0 +1,36 @@
+<title>Midway 评论组件示例</title>
+<style>
+  .main {
+    margin: 0 auto;
+    max-width: 660px;
+    padding: 12px;
+    font-size: 13px;
+    color: #666;
+  }
+  </style>
+<div class="main"">
+  <h2>Midway Serverless评论组件</h2>
+  <h4>功能：</h4>
+  <ul>
+    <li>评论与回复功能，头像自动获取</li>
+    <li>部署在Serverless环境，几乎无成本</li>
+    <li>评论、回复邮件提醒</li>
+    <li>支持限流</li>
+  </ul>
+  <h4>如何使用：</h4>
+  <ol>
+    <li>使用 <a href="http://demo.midwayjs.org" target="_blank">Midway Serverless</a> 一键部署此项目</li>
+    <li>引入脚本 <a href="./pcommit.js" target="_blank">pcommit.js</a> （使用部署后生成的脚本链接）</li>
+    <li>初始化 <code>new Pcommit({ container: DOMElement, site: 'text', page: 'text' });</code></li>
+    <li>查看效果</li>
+  </ol>
+</div>
+<div id="container"></div>
+<script src="./pcommit.js"></script>
+<script>
+const commit = new Pcommit({
+  container: document.getElementById('container'),
+  site: 'midway-gallery',
+  page: 'commit-demo'
+});
+</script>
