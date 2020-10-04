@@ -1,0 +1,28 @@
+service: midway-email-demo
+
+provider:
+  name: aliyun
+  runtime: nodejs10
+
+functions:
+  render:
+    handler: render.handler
+    events:
+      - http:
+          path: /*
+  send:
+    handler: email.send
+    events:
+      - http:
+          path: /api/send
+
+package:
+  include:
+    - static
+  artifact: code.zip
+
+aggregation:
+  agg-demo-all:
+    deployOrigin: false
+    functionsPattern:
+      - '*'

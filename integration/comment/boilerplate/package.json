@@ -1,0 +1,23 @@
+{
+  "name": "midway-faas-comment-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@midwayjs/faas": "^1.0.0",
+    "@midwayjs/faas-middleware-static-file": "^1.0.0",
+    "md5-hex": "^3.0.1",
+    "nodemailer": "^6.4.13",
+    "otswhere": "^0.0.4",
+    "tablestore": "^5.0.7"
+  },
+  "scripts": {
+    "dev": "npx f invoke -p",
+    "build": "npx f package"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@midwayjs/faas-cli": "*",
+    "typescript": "4"
+  }
+}

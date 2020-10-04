@@ -1,14 +1,11 @@
 {
-  "name": "midway-faas-ots-demo",
+  "name": "midway-faas-email-demo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@midwayjs/faas": "^1.0.0",
     "@midwayjs/faas-middleware-static-file": "^1.0.0",
-    "md5-hex": "^3.0.1",
-    "nodemailer": "^6.4.13",
-    "otswhere": "^0.0.4",
-    "tablestore": "^5.0.7"
+    "nodemailer": "^6.4.13"
   },
   "scripts": {
     "dev": "npx f invoke -p",

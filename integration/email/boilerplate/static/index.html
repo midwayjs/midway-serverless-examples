@@ -1,0 +1,109 @@
+<title>Midway Email发送示例</title>
+<style>
+  .main {
+    margin: 0 auto;
+    max-width: 660px;
+    padding: 12px;
+    font-size: 13px;
+    color: #666;
+  }
+  input,textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 8px 12px;
+    font-size: 13px;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+  }
+  textarea {
+    resize: none;
+    min-height: 120px;
+  }
+  #btn {
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    background-color: #efefef;
+    border-radius: 3px;
+  }
+  .more {
+    margin: 72px 0;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+  }
+
+  a {
+    color: #7c7cd0;
+    text-decoration: none;
+  }
+  </style>
+<div class="main"">
+  <h3>Midway Email 发送示例</h3>
+  <input placeholder="请输入接收邮箱" id="email" /><br />
+  <input placeholder="请输入邮件标题" id="title"/><br />
+  <textarea id="text" placeholder="请输入邮件内容"></textarea>
+  <div id="btn">点击发送</div>
+  <div class="more">更多示例请访问 <a href="http://demo.midwayjs.org">Midway Gallery</a></div>
+</div>
+<script>
+const eleMap = {};
+const data = {};
+const allFormId = ['email', 'title', 'text'];
+allFormId.forEach(id => {
+  const ele = document.getElementById(id);
+  ele.oninput = (e) => {
+    data[id] = e.target.value;
+  };
+  eleMap[id] = ele;
+});
+const btn = document.getElementById('btn');
+let isSend;
+btn.onclick = () => {
+  if (isSend) {
+    return;
+  }
+  const noDataId = allFormId.find(id => {
+    return !data[id];
+  });
+  if (noDataId) {
+    displayError(eleMap[noDataId]);
+    return;
+  }
+  isSend = true;
+  fetch(`./api/send`, {
+    method:'POST',
+    headers:{
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  }).then(response => {
+    return response.json();
+  }).then(result => {
+    isSend = false;
+    if (result.success) {
+      alert('发送成功');
+    } else {
+      alert('发送失败：' + result.err);
+    }
+  });
+}
+// 显示错误信息
+let errorTimeout;
+const displayError = (ele) => {
+  const errBgColor = 'rgb(249, 204, 204)';
+  clearTimeout(errorTimeout);
+  ele.style.backgroundColor = errBgColor;
+  errorTimeout = setTimeout(() => {
+    ele.style.backgroundColor = '#fff';
+    errorTimeout = setTimeout(() => {
+      ele.style.backgroundColor = errBgColor;
+      errorTimeout = setTimeout(() => {
+        ele.style.backgroundColor = '#fff';
+      }, 300);
+    }, 300);
+  }, 300);
+}
+</script>

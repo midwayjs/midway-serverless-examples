@@ -4,7 +4,7 @@ import format from 'otswhere/format';
 import OTSWhere from 'otswhere';
 import md5Hex from 'md5-hex';
 @Provide()
-export class TodoService {
+export class CommentService {
 
   @Inject()
   ctx;
