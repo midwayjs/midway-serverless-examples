@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test": "mw test --ts"
   },
   "dependencies": {
     "@midwayjs/faas": "^1.0.0",
@@ -16,6 +17,9 @@
     "vue-property-decorator": "^8.4.1"
   },
   "devDependencies": {
+    "@midwayjs/cli": "^1.2.19",
+    "@midwayjs/serverless-fc-trigger": "^1.2.9",
+    "@midwayjs/fcli-plugin-fc": "^1.2.x",
     "@midwayjs/serverless-invoke": "^1.0.0",
     "@types/joi": "^14.3.4",
     "@types/mocha": "^7.0.2",
