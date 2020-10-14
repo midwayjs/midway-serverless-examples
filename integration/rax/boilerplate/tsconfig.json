@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "esNext",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "target": "es2015",
+    "outDir": "build",
+    "jsx": "preserve",
+    "jsxFactory": "createElement",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "./src/**/*", "src/apis/configuration.ts"
+  ],
+  "exclude": [
+    "build",
+    "node_modules"
+  ]
+}

@@ -1,0 +1,23 @@
+service:
+  name: midway-rax-demo
+provider:
+  name: aliyun
+functions:
+  index:
+    handler: index.handler
+    events:
+      - http:
+          path: /api/index
+  assets:
+    handler: assets.handler
+    events:
+      - http:
+          path: /*
+aggregation:
+  all:
+    functionsPattern:
+      - '*'
+package:
+  include:
+    - build
+  artifact: code.zip
