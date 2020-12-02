@@ -9,8 +9,6 @@ export const mysql = {
     user: 'xxxx',
     // 密码
     password: '123456',
-    // 是否启用加密密码
-    encryptPassword: false,
     // 数据库名
     database: 'MY_APP',
   }
