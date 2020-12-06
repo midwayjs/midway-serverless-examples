@@ -11,13 +11,13 @@
   "dependencies": {
     "@midwayjs/faas": "^1.2.1",
     "@midwayjs/faas-middleware-static-file": "^1.0.0",
-    "@midwayjs/hooks": "0.x.x",
+    "@midwayjs/hooks": "^1.0.0",
     "core-js": "^3.6.5",
     "vue": "^3.0.0-0",
     "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
-    "@midwayjs/faas-cli-plugin-midway-hooks": "0.x.x",
+    "@midwayjs/faas-cli-plugin-midway-hooks": "^1.0.0",
     "@midwayjs/fcli-command-core": "^1.2.12",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
