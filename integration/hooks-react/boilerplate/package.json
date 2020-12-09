@@ -10,16 +10,16 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "@midwayjs/faas": "^1.0.0",
     "@midwayjs/faas-middleware-static-file": "^1.0.0",
-    "@midwayjs/hooks": "0.x.x"
+    "@midwayjs/hooks": "^1.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@midwayjs/faas-cli-plugin-midway-hooks": "0.x.x",
+    "@midwayjs/faas-cli-plugin-midway-hooks": "^1.0.0",
     "@midwayjs/faas-dev-pack": "^1.0.0",
-    "@midwayjs/hooks-loader": "0.x.x",
+    "@midwayjs/hooks-loader": "^1.0.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -39,9 +39,16 @@
   },
   "eslintConfig": {
     "extends": "react-app",
-    "rules": {
-      "react-hooks/rules-of-hooks": "off"
-    }
+    "overrides": [
+      {
+        "files": [
+          "**/src/apis/**"
+        ],
+        "rules": {
+          "react-hooks/rules-of-hooks": 0
+        }
+      }
+    ]
   },
   "browserslist": {
     "production": [

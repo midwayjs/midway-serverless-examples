@@ -5,11 +5,12 @@ const URL = require('url');
 
 module.exports = function (app) {
   app.use(
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     useExpressDevPack({
       functionDir: resolve(__dirname, '../'),
       sourceDir: resolve(__dirname, 'apis'),
       // 忽略渲染函数
-      ignoreWildcardFunctions: ['render'],
+      ignoreWildcardFunctions: ['render-index'],
       // 忽略静态文件地址
       ignorePattern: (req) => {
         const { pathname } = URL.parse(req.url);

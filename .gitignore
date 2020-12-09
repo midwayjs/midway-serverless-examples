@@ -8,3 +8,4 @@ package-lock.json
 *.log
 integration/todo-antd-umi-mysql
 build
+.idea
