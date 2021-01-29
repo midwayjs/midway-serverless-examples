@@ -3,7 +3,7 @@
 ## 安装命令行工具
 
 ```
-$ npm i @midwayjs/faas-clig -g
+$ npm i @midwayjs/faas-cli -g
 ```
 
 ## 本地开发
